@@ -20,6 +20,14 @@ const Projects: CollectionConfig = {
       },
     },
     {
+      name: 'icon',
+      type: 'upload',
+      relationTo: 'media',
+      filterOptions: {
+        mimeType: { contains: 'image' },
+      },
+    },
+    {
       name: 'url',
       type: 'text',
     },
@@ -76,12 +84,20 @@ const Projects: CollectionConfig = {
       required: true,
     },
     {
-      name: 'icon',
-      type: 'upload',
-      relationTo: 'media',
-      filterOptions: {
-        mimeType: { contains: 'image' },
-      },
+      name: 'backgroundColor',
+      type: 'text',
+    },
+    {
+      name: 'accentColor',
+      type: 'text',
+    },
+    {
+      name: 'textColor',
+      type: 'text',
+    },
+    {
+      name: 'linkColor',
+      type: 'text',
     },
   ],
   hooks: {
