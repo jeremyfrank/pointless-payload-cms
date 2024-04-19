@@ -2,6 +2,9 @@ import { CollectionConfig } from 'payload/types'
 import { populatePublishedDate } from '../hooks/populatePublishedDate'
 
 const Projects: CollectionConfig = {
+  access: {
+    read: () => true,
+  },
   admin: {
     defaultColumns: ['title', 'slug', 'publishedDate'],
   },
