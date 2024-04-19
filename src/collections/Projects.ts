@@ -15,6 +15,11 @@ const Projects: CollectionConfig = {
       required: true,
     },
     {
+      name: 'slug',
+      type: 'text',
+      required: true,
+    },
+    {
       name: 'logo',
       type: 'upload',
       relationTo: 'media',
