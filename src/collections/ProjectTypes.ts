@@ -22,6 +22,22 @@ const ProjectTypes: CollectionConfig = {
         mimeType: { contains: 'image' },
       },
     },
+    {
+      name: 'backgroundColor',
+      type: 'text',
+    },
+    {
+      name: 'accentColor',
+      type: 'text',
+    },
+    {
+      name: 'textColor',
+      type: 'text',
+    },
+    {
+      name: 'linkColor',
+      type: 'text',
+    },
   ],
   slug: 'project-types',
 }
