@@ -4,6 +4,9 @@ import { LinkFeature, lexicalEditor } from '@payloadcms/richtext-lexical'
 import path from 'path'
 
 const Media: CollectionConfig = {
+  access: {
+    read: () => true,
+  },
   fields: [
     {
       name: 'alt',

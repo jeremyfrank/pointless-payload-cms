@@ -1,6 +1,9 @@
 import { CollectionConfig } from 'payload/types'
 
 const ProjectTypes: CollectionConfig = {
+  access: {
+    read: () => true,
+  },
   admin: {
     defaultColumns: ['title', 'publishedDate'],
     useAsTitle: 'title',
