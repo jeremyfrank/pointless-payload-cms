@@ -17,6 +17,7 @@ const ProjectTypes: CollectionConfig = {
     {
       name: 'icon',
       type: 'upload',
+      required: true,
       relationTo: 'media',
       filterOptions: {
         mimeType: { contains: 'image' },
@@ -25,18 +26,22 @@ const ProjectTypes: CollectionConfig = {
     {
       name: 'backgroundColor',
       type: 'text',
+      required: true,
     },
     {
       name: 'accentColor',
       type: 'text',
+      required: true,
     },
     {
       name: 'textColor',
       type: 'text',
+      required: true,
     },
     {
       name: 'linkColor',
       type: 'text',
+      required: true,
     },
   ],
   slug: 'project-types',

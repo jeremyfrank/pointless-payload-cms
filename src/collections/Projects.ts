@@ -46,9 +46,10 @@ const Projects: CollectionConfig = {
     },
     {
       name: 'type',
+      type: 'relationship',
+      required: true,
       hasMany: false,
       relationTo: 'project-types',
-      type: 'relationship',
     },
     {
       name: 'publishedDate',
