@@ -57,16 +57,7 @@ const Projects: CollectionConfig = {
       admin: {
         position: 'sidebar',
       },
-      hooks: {
-        beforeChange: [
-          ({ siblingData, value }) => {
-            if (siblingData._status === 'published' && !value) {
-              return new Date()
-            }
-            return value
-          },
-        ],
-      },
+      defaultValue: () => new Date(),
     },
     {
       name: 'launchDate',
