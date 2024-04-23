@@ -13,13 +13,6 @@ const Media: CollectionConfig = {
       required: true,
       type: 'text',
     },
-    {
-      name: 'caption',
-      editor: lexicalEditor({
-        features: ({ defaultFeatures }) => [LinkFeature({})],
-      }),
-      type: 'richText',
-    },
   ],
   slug: 'media',
   upload: {
