@@ -1,5 +1,8 @@
 import { CollectionConfig } from 'payload/types'
 import { populatePublishedDate } from '../hooks/populatePublishedDate'
+import { Image } from '../blocks/Image'
+import { Text } from '../blocks/Text'
+import { Video } from '../blocks/Video'
 
 const Projects: CollectionConfig = {
   access: {
@@ -98,6 +101,11 @@ const Projects: CollectionConfig = {
     {
       name: 'linkColor',
       type: 'text',
+    },
+    {
+      name: 'blocks',
+      type: 'blocks',
+      blocks: [Image, Text, Video],
     },
   ],
   hooks: {
