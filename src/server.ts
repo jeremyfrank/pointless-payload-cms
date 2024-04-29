@@ -14,7 +14,7 @@ app.get('/', (_, res) => {
   res.redirect('/admin')
 })
 
-const start = async () => {
+const start = async (): Promise<void> => {
   // Initialize Payload
   await payload.init({
     secret: process.env.PAYLOAD_SECRET,
